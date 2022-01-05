@@ -128,7 +128,7 @@ insert Log_In(UserName,Pass) values('clark@gmail.com','123456');
 insert GiaoVien(HoTen,NgaySinh,GioiTinh,SoDienThoai,Email,DiaChi,MaTK,LinkAvatar,ID_LogIn) 
 	values(N'Đàm Vĩnh Hưng','1989-09-09',N'Nam','0111111111','vinhhung@gmail.com',N'Đường D4, Vũng Tàu, Bà Rịa Vũng Tàu',null,'https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled-1150x647.png',1);
 insert GiaoVien(HoTen,NgaySinh,GioiTinh,SoDienThoai,Email,DiaChi,MaTK,LinkAvatar,ID_LogIn) 
-	values(N'Lê Thùy Trang','1996-22-3',N'Nữ','0222222222','thuytrang@gmail.com',N'Đường CN2, Nam Từ Liêm, Hà Nội',null,'https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled-1150x647.png',2);
+	values(N'Lê Thùy Trang','1996-02-03',N'Nữ','0222222222','thuytrang@gmail.com',N'Đường CN2, Nam Từ Liêm, Hà Nội',null,'https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled-1150x647.png',2);
 insert GiaoVien(HoTen,NgaySinh,GioiTinh,SoDienThoai,Email,DiaChi,MaTK,LinkAvatar,ID_LogIn) 
 	values(N'Nguyễn Hữu Phú','2001-11-10',N'Nam','0333333333','huuphu@gmail.com',N'Đường Phan Văn Lưu, Bến Lức, Long An',null,'https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled-1150x647.png',3);
 insert GiaoVien(HoTen,NgaySinh,GioiTinh,SoDienThoai,Email,DiaChi,MaTK,LinkAvatar,ID_LogIn) 
@@ -148,31 +148,31 @@ insert GiaoVien(HoTen,NgaySinh,GioiTinh,SoDienThoai,Email,DiaChi,MaTK,LinkAvatar
 
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'JavaScript','2022-01-01','2022-01-10','2022-03-03',1000000,30,N'm o  t a',
-	N'IT',N'09:30-11:00 Thứ 2,4,6 mỗi tuần',N'Đang mở',null,'https://i2.wp.com/enrollmind.com/wp-content/uploads/2021/10/Free-Javascript-Course-For-Beginners.jpg',null,1);
+	N'IT',N'09:30-11:00 Thứ 2,4,6 mỗi tuần',N'Đang mở','java-script','https://i2.wp.com/enrollmind.com/wp-content/uploads/2021/10/Free-Javascript-Course-For-Beginners.jpg','0SJE9dYdpps',1);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'HTML/CSS','2022-01-01','2022-01-11','2022-03-21',1100000,35,N'm o  t a',
-	N'IT',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Đang mở',null,'https://miro.medium.com/max/750/1*eTuCOcn_u09KDIkEKoOhZQ.jpeg',null,3);
+	N'IT',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Đang mở','html-css','https://miro.medium.com/max/750/1*eTuCOcn_u09KDIkEKoOhZQ.jpeg','zwsPND378OQ',3);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'NodeJS','2022-01-01','2022-01-12','2022-03-22',1200000,40,N'm o  t a',
-	N'IT',N'16:30-18:00 Thứ 3,5,7 mỗi tuần',N'Đang mở',null,'https://rafaellaurindo.com.br/wp-content/uploads/2019/01/nodejs-vale-a-pena-vantagens.jpg',null,4);
+	N'IT',N'16:30-18:00 Thứ 3,5,7 mỗi tuần',N'Đang mở','nodejs','https://tedu.com.vn/uploaded/images/path/102020/nodejs.png','ysjJlvQ3FFc',4);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'ReactJS','2022-01-01','2022-01-13','2022-03-23',1500000,30,N'm o  t a',
-	N'IT',N'09:30-11:00 Thứ 3,5,7 mỗi tuần',N'Đang mở',null,'https://miro.medium.com/max/1400/1*EVqCcmCPgpNKxU1wzcTHgw.png',null,5);
+	N'IT',N'09:30-11:00 Thứ 3,5,7 mỗi tuần',N'Đang mở','reactjs','https://miro.medium.com/max/1400/1*EVqCcmCPgpNKxU1wzcTHgw.png','x0fSBAgBrOQ',5);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'C/C++','2022-01-01','2022-01-14','2022-03-24',2100000,35,N'm o  t a',
-	N'IT',N'09:30-11:00 Thứ 2,4,6 mỗi tuần',N'Đang mở',null,'https://miro.medium.com/max/2000/1*oiwBIOAfbC5oN8Ml67arTQ.png',null,6);
+	N'IT',N'09:30-11:00 Thứ 2,4,6 mỗi tuần',N'Đang mở','c-plus-plus','https://miro.medium.com/max/2000/1*oiwBIOAfbC5oN8Ml67arTQ.png','WS05AU6YYm4',6);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'Python','2022-01-01','2022-01-20','2022-03-25',1800000,40,N'm o  t a',
-	N'IT',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Sắp mở',null,'https://cdn.springpeople.com/media/python%20logo.png',null,7);
+	N'IT',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Sắp mở','python','https://cdn.springpeople.com/media/python%20logo.png','NZj6LI5a9vc',7);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'Julia','2022-01-01','2022-01-21','2022-03-26',1900000,30,N'm o  t a',
-	N'IT',N'09:30-11:00 Thứ 3,5,7 mỗi tuần',N'Sắp mở',null,'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201808/julia-programming-language-mit-00_0.png',null,8);
+	N'IT',N'09:30-11:00 Thứ 3,5,7 mỗi tuần',N'Sắp mở','julia','https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201808/julia-programming-language-mit-00_0.png','81DRruCIO34',8);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'TOEIC ADVANCED 700+','2022-01-22','2022-01-17','2022-03-23',2200000,35,N'm o  t a',
-	N'Tiếng Anh',N'16:30-18:00 Thứ 3,5,7 mỗi tuần',N'Sắp mở',null,'https://www.dolenglish.vn/wp-content/uploads/2021/08/toeic.jpg',null,9);
+	N'Tiếng Anh',N'16:30-18:00 Thứ 3,5,7 mỗi tuần',N'Sắp mở','toeic-advanced-700','https://www.dolenglish.vn/wp-content/uploads/2021/08/toeic.jpg','-w41KKJOQOI',9);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'IELTS 8.0','2022-01-01','2022-01-23','2022-03-28',2900000,40,N'm o  t a',
-	N'Tiếng Anh',N'16:30-18:00 Thứ 3,5,7 mỗi tuần',N'Sắp mở',null,'https://acet.edu.vn/wp-content/uploads/2021/03/hoc-ielts-8-0.jpg',null,10);
+	N'Tiếng Anh',N'16:30-18:00 Thứ 3,5,7 mỗi tuần',N'Sắp mở','ielts','https://acet.edu.vn/wp-content/uploads/2021/03/hoc-ielts-8-0.jpg','u1laYUVQA0c',10);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'TOEFL iBT','2022-01-01','2022-01-24','2022-03-29',2500000,30,N'm o  t a',
-	N'Tiếng Anh',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Sắp mở',null,'https://indec.vn/wp-content/uploads/2021/03/image2-11.png',null,2);	
+	N'Tiếng Anh',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Sắp mở','toefl-ibt','https://indec.vn/wp-content/uploads/2021/03/image2-11.png','DJW2U2QlCOc',2);	
