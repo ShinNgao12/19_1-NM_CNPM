@@ -6,7 +6,8 @@ create table Log_In
 (
     ID_LogIn int auto_increment primary key,
     UserName varchar(50) null,
-    Pass varchar(15) null
+    Pass varchar(15) null,
+    LoaiNguoiDung varchar(10) null
 );
 
 create table TaiKhoan
@@ -115,29 +116,30 @@ create table GiaoVienPhanHoi
     foreign key (MaKH) references KhoaHoc (MaKH)
 );
 
-insert Log_In(UserName,Pass) values('vinhhung@gmail.com','123456');
-insert Log_In(UserName,Pass) values('thuytrang@gmail.com','123456');
-insert Log_In(UserName,Pass) values('huuphu@gmail.com','123456');
-insert Log_In(UserName,Pass) values('anhquoc@gmail.com','123456');
-insert Log_In(UserName,Pass) values('phuthu@gmail.com','123456');
-insert Log_In(UserName,Pass) values('minhtuan@gmail.com','123456');
-insert Log_In(UserName,Pass) values('peter@gmail.com','123456');
-insert Log_In(UserName,Pass) values('tony@gmail.com','123456');
-insert Log_In(UserName,Pass) values('bruce@gmail.com','123456');
-insert Log_In(UserName,Pass) values('clark@gmail.com','123456');
-insert Log_In(UserName,Pass) values('ducan@gmail.com','123456');
-insert Log_In(UserName,Pass) values('ngoclinh@gmail.com','123456');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('vinhhung@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('thuytrang@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('huuphu@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('anhquoc@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('phuthu@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('minhtuan@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('peter@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('tony@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('bruce@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('clark@gmail.com','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('ducan@gmail.com','123456','HocVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('ngoclinh@gmail.com','123456','HocVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('admin@gmail.com','admin','Admin');
 
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1011179576648035',2000000,N'ACB');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1013072124821570',2000000,N'BIDV');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1025508233667619',2000000,N'ACB');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1039890345775947',2000000,N'VietinBank');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1045743153899832',2000000,N'Techcombank');
-insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1071811251667463',2000000,N'Nam A Bank');
+insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1071811251667463',2000000,N'TP Bank');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1112891990998192',2000000,N'Agribank');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1147744342659906',2000000,N'Vietcombank');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1186971113493529',2000000,N'MB Bank');
-insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1199910571247712',2000000,N'Bac A Bank');
+insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1199910571247712',2000000,N'TP Bank');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1308040040318722',2500000,N'BIDV');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1317382136172721',2500000,N'BIDV');
 
@@ -181,7 +183,7 @@ insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,
 	N'IT',N'09:30-11:00 Thứ 3,5,7 mỗi tuần',N'Đang mở','reactjs','https://miro.medium.com/max/1400/1*EVqCcmCPgpNKxU1wzcTHgw.png','x0fSBAgBrOQ',5);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'C/C++','2021-10-01','2021-10-10','2021-12-31',2100000,35,N'Khóa học sẽ trang bị cho học viên các kỹ năng lập trình được minh hoạ cụ thể bằng ngôn ngữ lập trình C/C++ từ cơ bản đến nâng cao. Khóa học bao gồm các kỹ thuật lập trình trên các kiểu dữ liệu cơ bản, các phát biểu lựa chọn, câu lệnh điều khiển, vòng lặp, mảng, con trỏ, kiểu cấu trúc. Bên cạnh đó khóa học cũng trang bị cho học viên kiến thức xử lý tập tin, cách viết chương trình theo kiểu lập trình hàm...\ Qua khóa học Học lập trình C/C++ TỪ A - Z tại Coursin, học viên có thể tự nâng cao kỹ năng lập trình của mình, dễ dàng tiếp cận các ngôn ngữ cấp cao và công nghệ mới. Đây là khóa học tạo tiền đề tốt cho việc tiếp cận phương pháp lập trình hướng đối tượng, một phương pháp lập trình cần phải có của một lập trình viên.',
-	N'IT',N'09:30-11:00 Thứ 2,4,6 mỗi tuần',N'Đang mở','c-plus-plus','https://miro.medium.com/max/2000/1*oiwBIOAfbC5oN8Ml67arTQ.png','WS05AU6YYm4',6);
+	N'IT',N'09:30-11:00 Thứ 2,4,6 mỗi tuần',N'Đã đóng','c-plus-plus','https://miro.medium.com/max/2000/1*oiwBIOAfbC5oN8Ml67arTQ.png','WS05AU6YYm4',6);
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'Python','2022-01-01','2022-01-20','2022-03-25',1800000,40,N'Khóa học sẽ cung cấp toàn bộ kiến thức từ cơ bản đến chuyên sâu của lập trình Python, giúp học viên có thể tạo ra một ứng dụng Python hoàn chỉnh sau khi hoàn thành khóa học:\- Cung cấp những cơ hội thực hành tạo ứng dụng Python ngay trong quá trình học.- Sau khi hoàn thành khóa học, học viên sẽ có kiến thức để tiếp tục học các môn khác nhau: Cấu trúc dữ liệu, lập trình Kotlin, lập trình Java, lập trình Android, Web...- Tìm hiểu cơ bản về ngôn ngữ lập trình Python (Từ định nghĩa đến kiểu dữ liệu, biến, câu lệnh, mảng, chuỗi ... cấu trúc điều khiển, cấu trúc vòng lặp trong Python....).- Cách tạo và gọi hàm trong Python.- Xử lý mảng, List, chuỗi, tập tin.',
 	N'IT',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Sắp mở','python','https://cdn.springpeople.com/media/python%20logo.png','NZj6LI5a9vc',7);
