@@ -22,7 +22,7 @@ create table HocVien
 (
     MaHV int auto_increment primary key,
     HoTen nvarchar(50) null,
-    NgaySinh datetime null,
+    NgaySinh date null,
     GioiTinh char(3) null,
     SoDienThoai varchar(15) null,
     Email varchar(30) null,
@@ -40,7 +40,7 @@ create table GiaoVien
 (
     MaGV int auto_increment primary key,
     HoTen nvarchar(50) null,
-    NgaySinh datetime null,
+    NgaySinh date null,
     GioiTinh char(3) null,
     SoDienThoai varchar(15) null,
     Email varchar(30) null,
@@ -58,9 +58,9 @@ create table KhoaHoc
 (
     MaKH int auto_increment primary key,
     TenKH varchar(45)  null,
-    NgayTao datetime null,
-    NgayBD datetime null,
-    NgayKT datetime null,
+    NgayTao date null,
+    NgayBD date null,
+    NgayKT date null,
     HocPhi float(25) null,
     SLHV_Max int null,
     MoTa nvarchar(1000) null,
@@ -79,7 +79,7 @@ create table HocVien_TG_KhoaHoc
 (
     MaHV int not null,
     MaKH int not null,
-    NgayTG datetime null,
+    NgayTG date null,
     TinhTrang nvarchar(20) null,
     constraint PK_HocVien_TG_KhoaHoc primary key (MaHV,MaKH),
         constraint FK_HocVien_TG_KhoaHoc_HocVien
