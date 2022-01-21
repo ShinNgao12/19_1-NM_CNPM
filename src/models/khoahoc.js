@@ -12,15 +12,15 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     NgayTao: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
       allowNull: true
     },
     NgayBD: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
       allowNull: true
     },
     NgayKT: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
       allowNull: true
     },
     HocPhi: {
@@ -32,7 +32,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     MoTa: {
-      type: DataTypes.STRING(225),
+      type: DataTypes.STRING(1000),
       allowNull: true
     },
     LinhVuc: {

@@ -20,7 +20,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     NgayTG: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
       allowNull: true
     },
     TinhTrang: {

@@ -17,8 +17,6 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        
-
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
@@ -35,10 +33,34 @@
                                 </li>
                             </ul>   
 
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"><a href="" style="font-size: 12px;">Đăng kí</a></li>
-                                <li class="nav-item"><a href="" style="font-size: 12px;">Đăng nhập</a></li>
-                            </ul>   
+                            {{#if session.isLogin}}
+                                
+                                <div class="ml-auto">
+                                    <div class="navbar-brand dropdown ml-40">
+                                        <a class="dropdown-toggle" style="color: white; font-size: 17px; font-weight: 700" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            {{session.name}}
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            {{#if session.isTeacher}}
+                                                <li><a class="dropdown-item" href="/teacher">Khóa học của tôi</a></li>
+                                            {{else}}
+                                                <li><a class="dropdown-item" href="/student">Khóa học của tôi</a></li>
+                                            {{/if}}
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Cập nhật thông tin</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="/">Đăng xuất</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                        
+                                    
+                            {{else}}
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item"><a href="/register" style="font-size: 12px;">Đăng kí</a></li>
+                                    <li class="nav-item"><a href="/login" style="font-size: 12px;">Đăng nhập</a></li>
+                                </ul>   
+                            {{/if}}
                         </div>
                     </nav> <!-- nav -->
                 </div>
@@ -75,15 +97,15 @@
                     <div class="slider-cont-3 text-center">
                         <h2>Tìm kiếm khóa học theo cách của bạn !!</h2>
                         <div class="slider-search mt-45">
-                            <form action="#">
+                            <form action="" method="post">
                                 <div class="row no-gutters">
                                     
                                     <div class="col-sm-9">
-                                        <input type="text" name = "name-course" placeholder="Nhập từ khóa">
+                                        <input type="text" name = "keySearch" placeholder="Nhập từ khóa">
                                     </div>
 
                                     <div class="col-sm-3">
-                                        <button type="button" class="main-btn">Tìm kiếm</button>
+                                        <button type="submit" class="main-btn">Tìm kiếm</button>
                                     </div>
                                 </div> <!-- row -->
                             </form>
@@ -178,7 +200,7 @@
                                 
                                 <div class="course-teacher">
                                     <div class="thum">
-                                        <a href="courses-singel.html"><img src="/images/course/teacher/t-1.jpg" alt="teacher"></a>
+                                        <a href="courses-singel.html"><img style="width: 30px; height: 40px;" src="{{this.LinkAvatar}}" alt="teacher"></a>
                                     </div>
                                     <div class="name">
                                         <a href="/course/{{this.Slug}}"><h6>{{this.HoTen}}</h6></a>
@@ -228,7 +250,7 @@
                                 
                                 <div class="course-teacher">
                                     <div class="thum">
-                                        <a href="courses-singel.html"><img src="/images/course/teacher/t-1.jpg" alt="teacher"></a>
+                                        <a href="courses-singel.html"><img style="width: 30px; height: 40px;" src="{{this.LinkAvatar}}" alt="teacher"></a>
                                     </div>
                                     <div class="name">
                                         <a href="/course/{{this.Slug}}"><h6>{{this.HoTen}}</h6></a>

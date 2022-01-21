@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const loginController = require('../app/controllers/LoginController');
+const searchController = require('../app/controllers/searchController');
 
 router.get('/', loginController.index);
 router.post('/', loginController.show);

@@ -14,6 +14,10 @@ module.exports = function(sequelize, DataTypes) {
     Pass: {
       type: DataTypes.STRING(15),
       allowNull: true
+    },
+    LoaiNguoiDung: {
+      type: DataTypes.STRING(10),
+      allowNull: true
     }
   }, {
     sequelize,

@@ -22,7 +22,7 @@
                            
                             <div class="ml-auto">
                                 {{#if session.isLogin}}
-                                    <a style="color: white; font-size: 17px; font-weight: 700" href="/teacher">Khóa học của tôi</a>
+                                    <a style="color: white; font-size: 17px; font-weight: 700" href="">Khóa học của tôi</a>
                                 
                                     <div class="navbar-brand dropdown ml-40">
                                         <a class="dropdown-toggle" style="color: white; font-size: 17px; font-weight: 700" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,7 +82,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Khóa học</a></li>
+                                <li class="breadcrumb-item"><a href="/teacher">Khóa học của tôi</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">{{course.TenKH}}</li>
                             </ol>
                         </nav>
@@ -106,17 +106,6 @@
                         </div> <!-- title -->
                         <div class="course-terms">
                             <ul>
-                                <li>
-                                    <div class="teacher-name">
-                                        <div class="thum">
-                                            <img style="width:30px; height:35px" src="{{course.LinkAvatar}}" alt="Teacher">
-                                        </div>
-                                        <div class="name">
-                                            <span>GiaoVien</span>
-                                            <h6>{{course.HoTen}}</h6>
-                                        </div>
-                                    </div>
-                                </li>
                                 <li>
                                     <div class="course-category">
                                         <span>Lĩnh vực</span>
@@ -175,12 +164,7 @@
                                 </ul>
                                 <div class="price-button pt-10">
                                     <span>Học phí: <b>{{course.HocPhi}} VNĐ</b></span>
-
-                                    {{#if session.isLogin}}
-                                        <a href="/course/join/{{course.Slug}}" class="main-btn">Tham gia</a>
-                                    {{else}}
-                                        <a href="/login" class="main-btn">Tham gia</a>
-                                    {{/if}}
+                                    <a href="#" class="main-btn">Chỉnh sửa</a>
                                 </div>
                             </div> <!-- course features -->
                         </div>

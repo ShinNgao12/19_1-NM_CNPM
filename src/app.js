@@ -4,6 +4,9 @@ const morgan = require('morgan');
 const route = require('./routes');
 const handlebars = require('express-handlebars');
 require('dotenv').config('../.env');
+const session = require('express-session');
+
+
 
 const app = express();
 const port = 3000;
@@ -40,6 +43,12 @@ app.use(
 app.use(express.json());
 
 app.use(morgan('combined'));
+
+app.use(session({
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true
+}))
 
 route(app);
 

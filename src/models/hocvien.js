@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     NgaySinh: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
       allowNull: true
     },
     GioiTinh: {
@@ -38,6 +38,10 @@ module.exports = function(sequelize, DataTypes) {
         model: 'taikhoan',
         key: 'MaTK'
       }
+    },
+    LinkAvatar: {
+      type: DataTypes.STRING(255),
+      allowNull: true
     },
     ID_LogIn: {
       type: DataTypes.INTEGER,

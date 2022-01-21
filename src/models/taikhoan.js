@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true
     },
     SoTK: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING(16),
       allowNull: true
     },
     SoDu: {
