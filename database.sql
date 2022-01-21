@@ -205,4 +205,8 @@ insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(1,9,'2022-01-25',N'
 insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(2,5,'2021-10-11',N'Đã hoàn thành');
 
 insert HocVienPhanHoi(MaHV,MaKH,NoiDung,ThoiGian) values(2,5,N'Amazing good job :))','2022-01-01');
+<<<<<<< HEAD
 insert GiaoVienPhanHoi(MaGV,MaKH,NoiDung,ThoiGian) values(6,5,N'Hệ thống phản hồi chờ hơi lâu!!','2022-01-01');
+=======
+insert GiaoVienPhanHoi(MaGV,MaKH,NoiDung,ThoiGian) values(6,5,N'Hệ thống phản hồi chờ hơi lâu!!','2022-01-01');
+>>>>>>> 5921fd9f49eaaad80c3c128319abd90c0e5cd338
