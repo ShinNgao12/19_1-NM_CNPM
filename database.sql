@@ -116,19 +116,19 @@ create table GiaoVienPhanHoi
     foreign key (MaKH) references KhoaHoc (MaKH)
 );
 
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('vinhhung@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('thuytrang@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('huuphu@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('anhquoc@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('phuthu@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('minhtuan@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('peter@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('tony@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('bruce@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('clark@gmail.com','123456','GiaoVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('ducan@gmail.com','123456','HocVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('ngoclinh@gmail.com','123456','HocVien');
-insert Log_In(UserName,Pass,LoaiNguoiDung) values('admin@gmail.com','admin','Admin');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('vinhhung123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('thuytrang123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('huuphu123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('anhquoc123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('phuthu123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('minhtuan123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('peter123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('tony123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('bruce123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('clark123','123456','GiaoVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('ducan123','123456','HocVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('ngoclinh123','123456','HocVien');
+insert Log_In(UserName,Pass,LoaiNguoiDung) values('admin','admin','Admin');
 
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1011179576648035',2000000,N'ACB');
 insert TaiKhoan(SoTK,SoDu,NganHangLK) values('1013072124821570',2000000,N'BIDV');
@@ -199,14 +199,27 @@ insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,
 insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
 	values(N'Khoá Luyện Thi TOEFL IBT','2022-01-01','2022-01-24','2022-03-29',2500000,30,N'Khoá học cung cấp cho học viên một quá trình luyện tập tổng thể từ trình độ thấp (foundation) cho đến trình độ cao (advanced) để có thể tham dự kỳ thi quốc tế này với kết quả cao nhất. Các khoá học thường ngắn, cường độ học tập cao để giúp học sinh tiến bộ trong thời gian ngắn nhất.\CHƯƠNG TRÌNH HỌC LIÊN TỤC CẬP NHẬT:- Các khóa học thiết kế phù hợp với trình độ học viên từng cấp học, với năm trình độ TOEFL Foundation, TOEFL Intermediate, TOEFL High-inter, TOEFL Intensive và TOEFL Advanced.- Các khoá học thiết kế riêng phù hợp trình độ học viên từng cấp học.- Các bài luyện tập được cô đọng với các chủ đề học thuật sát với đề thi thật.- Các kỹ năng sẽ được đi từ căn bản lên đến nâng cao cộng với việc một lượng từ vựng học thuật theo chủ điểm.- Các dạng bài thi của TOEFL được ôn tập kỹ càng. Bên cạnh đó, các giáo viên sẽ  cung cấp các kinh nghiệm, kỹ năng và bí kíp luyện thi hiệu quả nhất.',
 	N'Tiếng Anh',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Sắp mở','toefl-ibt','https://indec.vn/wp-content/uploads/2021/03/image2-11.png','DJW2U2QlCOc',2);
+insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
+	values(N'Python','2021-08-08','2021-08-15','2021-12-24',1800000,40,N'Khóa học sẽ cung cấp toàn bộ kiến thức từ cơ bản đến chuyên sâu của lập trình Python, giúp học viên có thể tạo ra một ứng dụng Python hoàn chỉnh sau khi hoàn thành khóa học:\- Cung cấp những cơ hội thực hành tạo ứng dụng Python ngay trong quá trình học.- Sau khi hoàn thành khóa học, học viên sẽ có kiến thức để tiếp tục học các môn khác nhau: Cấu trúc dữ liệu, lập trình Kotlin, lập trình Java, lập trình Android, Web...- Tìm hiểu cơ bản về ngôn ngữ lập trình Python (Từ định nghĩa đến kiểu dữ liệu, biến, câu lệnh, mảng, chuỗi ... cấu trúc điều khiển, cấu trúc vòng lặp trong Python....).- Cách tạo và gọi hàm trong Python.- Xử lý mảng, List, chuỗi, tập tin.',
+	N'IT',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Đã đóng','python','https://cdn.springpeople.com/media/python%20logo.png','NZj6LI5a9vc',7);
+insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
+	values(N'TOEIC 450-650+','2021-08-08','2021-08-15','2021-12-24',1600000,40,N'Chúng tôi đã cùng Coursin xây dựng khóa Luyện thi TOEIC trình độ A với mục tiêu 450-650+. Với kinh nghiệm luyện thi TOEIC hơn 10 năm, cùng cách truyền đạt hấp dẫn, lôi cuốn và sự tương tác với học viên thông qua các câu hỏi, các ví dụ minh họa sống động, cùng hàng nghìn bài luyện tập được giải thích một cách chi tiết và cẩn thận, khóa học này giúp các bạn:\- Nắm chắc các kiến thức mà bài thi TOEIC đề cập đến.- Hướng dẫn phương pháp, các chiến thuật làm bài của từng Part trong bài thi TOEIC.- Tổng hợp các mẹo xử lý nhanh bài thi TOEIC.- Các kỹ thuật tránh lỗi, tránh bẫy hay gặp khi luyện thi và làm bài thi TOEIC.- Các kỹ năng làm đúng phần nghe trong khi khả năng nghe chưa tốt.- Luyện tập với hàng nghìn câu hỏi sát đề thi được giải thích tỉ mỉ và chi tiết.- Tăng thêm 250 đến 300 điểm sau khóa học.Đừng chần chừ gì nữa, hãy bắt tay luyện thi TOEIC ngay bây giờ. Chắc chắn bạn sẽ đạt được mục tiêu của mình.',
+	N'Tiếng Anh',N'16:30-18:00 Thứ 3,5,7 mỗi tuần',N'Đã đóng','toeic-450-650','https://www.sites.google.com/site/tailieubachkhoatop1/_/rsrc/1533998409739/tieng-anh-toeic/toeic450-650/tuankm01.png','9TnYrAPSSo0',2);
+insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
+	values(N'JavaScript','2021-06-06','2021-06-09','2021-09-29',1000000,30,N'Khóa học Javascript này là series tổng hợp các thủ thuật khi lập trình với Javascript, các thủ thuật này cũng có thể coi là các mẹo nhỏ giúp bạn xử lý code ngắn gọn và tối ưu hơn. Học viên có thể viết được các thư viện javascript cho website thay cho các thư viện có sẵn là jquery đang sử dụng.\ Đặc biệt với rất nhiều bài tập thực hành thực tế, chi tiết được kết hợp linh hoạt giữa các kiến thức lý thuyết các hiệu ứng từ các website nổi tiếng như Kenh14, Facebook để lập trình các chức năng tương tác với Frontend ví dụ: giỏ hàng, các tính năng view ảnh, notification trên facebook... sẽ giúp học viên rất nhanh chóng làm quen và thành thạo Javascript thông qua những bài tập thực hành sát với thực tế nhất.',
+	N'IT',N'09:30-11:00 Thứ 2,4,6 mỗi tuần',N'Đã đóng','java-script','https://i2.wp.com/enrollmind.com/wp-content/uploads/2021/10/Free-Javascript-Course-For-Beginners.jpg','0SJE9dYdpps',1);
+insert KhoaHoc(TenKH,NgayTao,NgayBD,NgayKT,HocPhi,SLHV_Max,MoTa,LinhVuc,LichHoc,TrangThaiHD,Slug,LinkImage,LinkVideo,GVCN)
+	values(N'HTML/CSS','2021-06-06','2021-06-11','2021-09-21',1100000,35,N'Trong khóa học này, bạn sẽ học cách sử dụng HTML&CSS để tạo một trang web chuyên nghiệp, responsive được thiết kế cho cả máy tính để bàn và điện thoại di động. Bắt đầu với hiểu biết cơ bản về vai trò của HTML và CSS trong phát triển web, bạn sẽ học cách tạo biểu mẫu để thu thập thông tin của người dùng, cách hiển thị dữ liệu bằng bảng và các nguyên tắc thiết kế web responsive.\ Học HTML và CSS là những bước đầu tiên tuyệt vời trên con đường dẫn trở thành nhà phát triển phần mềm chuyên nghiệp.Nó sẽ cung cấp cho bạn các kỹ năng để làm việc hiệu quả hơn và giao tiếp đúng cách với các nhà phát triển (ngay cả khi bản thân bạn không muốn trở thành một lập trình viên chuyên nghiệp). Thật vô cùng thú vị khi có thể tự tạo các trang web, ứng dụng di động và trò chơi của riêng bạn.',
+	N'IT',N'16:30-18:00 Thứ 2,4,6 mỗi tuần',N'Đã đóng','html-css','https://miro.medium.com/max/750/1*eTuCOcn_u09KDIkEKoOhZQ.jpeg','zwsPND378OQ',2);
 
 insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(1,3,'2022-01-15',N'Chưa hoàn thành');
 insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(1,9,'2022-01-25',N'Chưa hoàn thành');
+insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(1,11,'2021-08-11',N'Đã hoàn thành');
+insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(1,12,'2021-08-11',N'Đã hoàn thành');
+insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(1,13,'2021-06-08',N'Đã hoàn thành');
+insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(1,14,'2021-06-09',N'Đã hoàn thành');
 insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(2,5,'2021-10-11',N'Đã hoàn thành');
+insert HocVien_TG_KhoaHoc(MaHV,MaKH,NgayTG,TinhTrang) values(2,12,'2021-08-14',N'Đã hoàn thành');
 
 insert HocVienPhanHoi(MaHV,MaKH,NoiDung,ThoiGian) values(2,5,N'Amazing good job :))','2022-01-01');
-<<<<<<< HEAD
 insert GiaoVienPhanHoi(MaGV,MaKH,NoiDung,ThoiGian) values(6,5,N'Hệ thống phản hồi chờ hơi lâu!!','2022-01-01');
-=======
-insert GiaoVienPhanHoi(MaGV,MaKH,NoiDung,ThoiGian) values(6,5,N'Hệ thống phản hồi chờ hơi lâu!!','2022-01-01');
->>>>>>> 5921fd9f49eaaad80c3c128319abd90c0e5cd338
