@@ -65,6 +65,72 @@ class TeacherController {
             res.redirect('/teacher');
         }
     }
+
+    // [GET] /teacher/course/update/:slug
+    async show_update(req, res) {
+        const khoahoc = await listCourses.getCourse(req.params.slug);
+        res.render('update_course', { khoahoc, session: req.session });
+    }
+
+    // [POST] /teacher/course/update/:slug
+    async update(req, res) {
+        const khoahoc = await listCourses.getCourse(req.params.slug);
+        const url = '/teacher/course/' + req.params.slug;
+        //res.render('course_of_teacher',  { course: khoahoc, session: req.session });
+        //res.redirect(url);
+
+        if (
+            req.body.TenKH == '' || 
+            req.body.HocPhi == '' || 
+            req.body.SLHV_Max == '' ||
+            req.body.LinhVuc == '' ||
+            req.body.LichHoc == '' ||
+            req.body.MoTa == '' ||
+            req.body.LinkImage == '' ||
+            req.body.LinkVideo == ''
+        ) {
+            res.render('update_course', { khoahoc: req.body, session: req.session, error: true } )
+        }
+        else {
+            const new_TenKH = req.body.TenKH;
+            const new_NgayBD = req.body.NgayBD;
+            const new_NgayKT = req.body.NgayKT;
+            const new_HOCPhi = req.body.HocPhi;
+            const new_SLHV_Max = req.body.SLHV_Max;
+            const new_LinhVuc = req.body.LinhVuc;
+            const new_LichHoc = req.body.LichHoc;
+            const new_MoTa = req.body.MoTa;
+            const new_LinkImage = req.body.LinkImage;
+            const new_LinkVideo = req.body.LinkVideo;
+            const Slug = req.params.slug;
+
+            const updateKhoaHoc = (new_TenKH, new_NgayBD, new_NgayKT, new_HOCPhi, new_SLHV_Max, new_LinhVuc, new_LichHoc, new_MoTa, 
+                new_LinkImage, new_LinkVideo, Slug) => {
+                const sql = `
+                    UPDATE khoahoc
+                    SET TenKH = '${new_TenKH}',
+                        NgayBD = '${new_NgayBD}',
+                        NgayKT = '${new_NgayKT}',
+                        HocPhi = ${new_HOCPhi},
+                        SLHV_Max = ${new_SLHV_Max},
+                        LinhVuc = '${new_LinhVuc}',
+                        LichHoc = '${new_LichHoc}',
+                        MoTa = '${new_MoTa}',
+                        LinkImage = '${new_LinkImage}',
+                        LinkVideo = '${new_LinkVideo}'
+                    WHERE Slug = '${Slug}';
+                `
+                return sequelize.query(sql, {
+                  type: sequelize.QueryTypes.UPDATE
+                })
+            }
+    
+            updateKhoaHoc(new_TenKH, new_NgayBD, new_NgayKT, new_HOCPhi, new_SLHV_Max, new_LinhVuc, new_LichHoc, new_MoTa, 
+                new_LinkImage, new_LinkVideo, Slug);
+            
+            res.redirect(url);
+        }
+    }
 }
 
 module.exports = new TeacherController();

@@ -29,7 +29,7 @@
                                             {{session.name}}
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Cập nhật thông tin</a></li>
+                                            <li><a class="dropdown-item" href="/update_info">Cập nhật thông tin</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="/">Đăng xuất</a></li>
                                         </ul>
@@ -164,7 +164,7 @@
                                 </ul>
                                 <div class="price-button pt-10">
                                     <span>Học phí: <b>{{course.HocPhi}} VNĐ</b></span>
-                                    <a href="#" class="main-btn">Chỉnh sửa</a>
+                                    <a href="/teacher/course/update/{{course.Slug}}" class="main-btn">Chỉnh sửa</a>
                                 </div>
                             </div> <!-- course features -->
                         </div>
