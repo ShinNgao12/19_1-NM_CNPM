@@ -43,7 +43,7 @@ class RegisterController {
                 var tai_khoan = await models.taikhoan.create({
                     SoTK: req.body.SoTK,
                     NganHangLK: req.body.NganHangLK,
-                    SoDu: 5000000,
+                    SoDu: 3000000,
                 })
 
                 if (log_in.LoaiNguoiDung === 'GiaoVien') {
